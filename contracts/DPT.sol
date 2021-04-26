@@ -172,7 +172,7 @@ contract DPT is ERC721, Ownable {
   }
 
   //changes the delegate of the patent
-  function currentDelegate(uint256 tokenId, address new_delegate) public  returns (bool success) {
+  function changeCurrentDelegate(uint256 tokenId, address new_delegate) public  returns (bool success) {
     require(_exists(tokenId), "ERC721Metadata: URI query for nonexistent token");
     if(ownerOf(tokenId) == msg.sender){
        _delegateAddr[tokenId] =new_delegate;
