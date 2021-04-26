@@ -206,6 +206,4 @@ contract DPT is ERC721, Ownable {
     return foo;
   }
 
-
-
 }
